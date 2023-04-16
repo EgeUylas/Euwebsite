@@ -1,0 +1,84 @@
+
+img:hover {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+     transform: scale(1.1); 
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+    to bottom,
+    #063e26,
+    #7319ab);
+
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #474747;
+}
+
+
+
+.home {
+    min-height: 100vh;
+   /* background: url(wpp.jpg) no-repeat;*/
+   background-color:rgba(20, 46, 74, 0.805);
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu{
+    background-color:rgba(20, 46, 74, 0.805);
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+   padding: 3rem;
+   background-color:#2dffea15;
+   min-height: 60rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content:space-between;
+   border-radius:  3rem;
+
+}
+.menu .box-container .box img{
+width: 100%;
+object-fit: cover;
+border-radius:  1rem;
+}
+.menu .box-container .box img:hover{
+-ms-transform: scale(1.1); /* IE 9 */
+   -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.menu .box-container .box .menu-category{
+   font-size: 1.4.rem;
+}
+.menu .box-container .box h3{
+font-size: 3rem;
+padding: 1rem 0;
+}
+.menu .box-container .box .price{
+   font-size: 2.5rem;
+   padding: 0.5rem 0;
+  }
+  .menu .box-container .box .price span{ 
+   font-size: 1.5rem;
+   text-decoration: line-through;
+   font-weight: 300;
+  }
